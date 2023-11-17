@@ -1,0 +1,136 @@
+$default_margin: 35px;
+$default_bc: #fff;
+$default_br: 4px;
+$cs_font:'cornerstone';
+
+@font-face{
+  font-family: $cs_font;
+  src: url("./fonts/cornerstone.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  height: 15vh;
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+}
+
+.outlineEle {
+  margin: 5px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: $cs_font;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &__ok {
+    background: #0f9675;
+    color: $default_bc;
+  }
+}
+
+.container {
+  background-color: $default_bc;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: $default_br;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  &__nav {
+
+    background: #ab131b;
+    display: flex;
+    border-radius: 5px 5px 0 0;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: $default_bc;
+      padding: 15px $default_margin 35px;
+      &.active {
+        background: #921217;
+      }
+    }
+  }
+
+  &__content {
+    padding: $default_margin ;
+    background-color: darkred;
+    &__new {
+      color: blue;
+      margin: -35px -35px $default_margin -35px;
+      background: #f9f9f9;
+      padding: $default_margin;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+
+      pizza-item {
+        background: $default_bc;
+        flex: 0 0 33.33%;
+        margin: 0 0 55px;
+        transition: 0.2s all ease;
+        a {
+          color: black;
+        }
+        .pizza-item{
+          text-align: center;
+          margin: 0 10px;
+          padding: 20px 10px;
+          border-radius: $default-br;
+          background: #f5f5f5;
+
+          pizza-display {
+            display: block;
+            .pizza-display{
+              &__base {
+                position: relative;
+                text-align: center;
+              }
+            }
+          }
+
+          h4 {
+            margin: 10px 0;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: $cs_font;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 25vh;
+  border-radius: 0 0 $default_br 4px;
+  color: $default_bc;
+  padding: 10px;
+  text-align: center;
+  background-color: darkorchid;
+  display: flex;
+  justify-content: space-around;
+  .footer_section {
+    width: 100px;
+    color: white;
+    margin: 30px 30px;
+  }
+}

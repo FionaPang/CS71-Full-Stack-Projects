@@ -1,0 +1,16 @@
+button {
+    width:90px;
+    height:50px;
+    background: #fff1dc;
+    border: none;
+    color: darkorange;
+    font-size: medium;
+    border-radius: 20px;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}

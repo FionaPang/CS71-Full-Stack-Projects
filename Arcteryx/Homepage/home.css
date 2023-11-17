@@ -1,0 +1,404 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerRowOne {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.headerRowTwo {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  color: #3d1e0a;
+  margin: 0 auto;
+}
+
+.headerCol {
+  margin: 5px;
+  padding: 5px;
+}
+
+.navRow {
+  width: 93%;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+}
+
+.navCol {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: left;
+}
+
+.navRow div:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+}
+
+.navRow div:nth-child(2) {
+  flex: 1;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+
+.navRow div:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+}
+
+.navRow div:nth-child(4) {
+  width: 20px;
+  height: 20px;
+  padding-left: 30px;
+  background-color: pink;
+}
+
+.navRow div:nth-child(5) {
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+}
+
+.h1__OnePic {
+  overflow: visible;
+  background-image: url("https://arc-cms-prod.imgix.net/content/2023-10/Tile1_32_Crop_1.jpg?auto=format%2Ccompress%2Cenhance&fit=crop&crop=focalpoint&q=75&ixlib=react-9.8.0");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  grid-template-rows: repeat(5, 1fr);
+}
+.h1__OnePic__h1Title {
+  grid-column: 1/3;
+  grid-row: 2;
+  color: white;
+  display: flex;
+  align-self: start;
+  flex-wrap: nowrap;
+}
+.h1__OnePic__pTitle {
+  grid-column: 1/3;
+  grid-row: 3;
+  color: white;
+  align-self: end;
+  margin: 0px;
+}
+
+.onePic_button {
+  grid-column: 1/3;
+  grid-row: 4;
+  align-items: flex-start;
+}
+.onePic_button__b {
+  padding: 5px 20px;
+}
+.onePic_button__b:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: solid black;
+}
+
+.two_pic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  border-top: 1rem solid white;
+  border-bottom: 1rem solid white;
+}
+.two_pic__p1 {
+  background-image: url("https://arc-cms-prod.imgix.net/content/2023-10/Tile2_32_Crop_1.jpg?auto=format%2Ccompress%2Cenhance&fp-x=0.55&fp-y=0.5&fp-z=1&fit=crop&crop=focalpoint&ixlib=react-9.8.0&q=40&w=576&h=576&dpr=1");
+  background-size: cover;
+  flex-wrap: wrap;
+  flex: 1;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  grid-template-rows: repeat(4, 1fr);
+}
+.two_pic__p1__T1 {
+  color: white;
+  grid-column: 1/3;
+  grid-row: 1/4;
+  align-self: start;
+}
+.two_pic__p1 .two_pic1__b {
+  padding-top: 50px;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  align-self: end;
+}
+.two_pic__p1 .two_pic1__b__but {
+  padding: 10px 30px;
+  margin-bottom: 0px;
+}
+.two_pic__p1 .two_pic1__b__but:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: solid black;
+}
+.two_pic__p1 .two_pic__p1__T3 {
+  color: white;
+  grid-column: 1/3;
+  grid-row: 4/4;
+  align-self: start;
+  padding-top: 0;
+  margin-top: 0;
+}
+.two_pic__p2 {
+  background-image: url("https://arc-cms-prod.imgix.net/content/2023-10/Tile3_32_Crop_0.jpg?auto=format%2Ccompress%2Cenhance&fp-x=0.5&fp-y=0.5&fp-z=1&fit=crop&crop=focalpoint&ixlib=react-9.8.0&q=25&w=576&h=576&dpr=1");
+  background-size: cover;
+  flex: 1;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  grid-template-rows: repeat(4, 1fr);
+}
+.two_pic__p2 .two_pic__p2__h1 {
+  color: white;
+  grid-column: 1/3;
+  grid-row: 1/4;
+  align-self: start;
+}
+.two_pic__p2 .two_pic__p1__T2 {
+  color: white;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.two_pic__p2 .two_pic__p2_b {
+  grid-column: 1/3;
+  grid-row: 4/4;
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  align-self: start;
+}
+.two_pic__p2 .two_pic__p2_b .two_pic__but {
+  padding: 10px 30px;
+  margin-bottom: 0px;
+  align-items: self-start;
+}
+.two_pic__p2 .two_pic__p2_b .two_pic__but:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: solid black;
+}
+
+.three_pic {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin: 20px 50px;
+  padding: 0px;
+}
+
+.three_pic_1 {
+  align-items: center;
+  align-self: center;
+  overflow: hidden;
+  margin: 0 0.5rem;
+  background-image: url("https://arc-cms-prod.imgix.net/content/2023-10/Tile4_Square_Crop_0.jpg?auto=format%2Ccompress%2Cenhance&fp-x=0.5&fp-y=0.5&fp-z=1&fit=crop&crop=focalpoint&ixlib=react-9.8.0&q=75&w=352&h=352&dpr=1");
+  background-size: cover;
+  aspect-ratio: auto 1/1;
+  flex: 1;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem;
+  grid-template-rows: repeat(3, 1fr);
+}
+.three_pic_1 .three_pic_1_T {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  align-self: start;
+  color: white;
+  aspect-ratio: 1;
+}
+.three_pic_1 .three_pic_1_p {
+  color: white;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  align-self: end;
+}
+.three_pic_1 .three_pic_1_b {
+  grid-column: 1/3;
+  grid-row: 3/3;
+}
+.three_pic_1 .three_pic_1_but:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: solid black;
+}
+
+.three_pic_2 {
+  margin: 0 0.5rem;
+  overflow: hidden;
+  background-image: url("https://arc-cms-prod.imgix.net/content/2023-09/Tile5_Square_Crop.png?auto=format%2Ccompress%2Cenhance&fp-x=0.5&fp-y=0.5&fp-z=1&fit=crop&crop=focalpoint&ixlib=react-9.8.0&q=75&w=352&h=352&dpr=1");
+  background-size: cover;
+  aspect-ratio: auto 1/1;
+  align-items: center;
+  align-self: center;
+  flex: 1;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem;
+  grid-template-rows: repeat(3, 1fr);
+}
+.three_pic_2 .three_pic_2_T {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  align-self: start;
+  color: white;
+}
+.three_pic_2 .three_pic_2_p {
+  color: white;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  align-self: end;
+}
+.three_pic_2 .three_pic_2_b {
+  grid-column: 1/3;
+  grid-row: 3/3;
+}
+.three_pic_2 .three_pic_2_but:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: solid black;
+}
+
+.three_pic_3 {
+  overflow: hidden;
+  margin: 0 0.5rem;
+  background-image: url("https://arc-cms-prod.imgix.net/content/2023-09/Tile6_Square_Crop_1.png?auto=format%2Ccompress%2Cenhance&fp-x=0.5&fp-y=0.5&fp-z=1&fit=crop&crop=focalpoint&ixlib=react-9.8.0&q=75&w=352&h=352&dpr=1");
+  background-size: cover;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem;
+  grid-template-rows: repeat(3, 1fr);
+  aspect-ratio: auto 1/1;
+  align-items: center;
+  align-self: center;
+  flex: 1;
+}
+.three_pic_3 .three_pic_3_b {
+  justify-content: center;
+  grid-column: 2/3;
+  grid-row: 3/3;
+}
+.three_pic_3 .three_pic_3_but:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: solid black;
+}
+
+.two_pic_new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  border-top: 1rem solid white;
+  border-bottom: 1rem solid white;
+}
+
+.two_pic_new_1 {
+  border: 1px solid green;
+  background-image: url("https://arc-cms-prod.imgix.net/content/2023-08/Tile7_32_Crop.png?auto=format%2Ccompress%2Cenhance&fp-x=0.5&fp-y=0.5&fp-z=1&fit=crop&crop=focalpoint&ixlib=react-9.8.0&q=75&w=952.5&h=696&dpr=1");
+  background-size: cover;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.5rem;
+  grid-template-rows: repeat(2, 1fr);
+  aspect-ratio: auto 1/1;
+  align-items: center;
+  align-self: center;
+  flex: 1;
+}
+
+.two_pic_new_2 {
+  border: 1px solid green;
+  background-image: url("https://arc-cms-prod.imgix.net/content/2023-08/Tile8_32_Crop.png?auto=format%2Ccompress%2Cenhance&fp-x=0.5&fp-y=0.5&fp-z=1&fit=crop&crop=focalpoint&ixlib=react-9.8.0&q=50&w=952.5&h=696&dpr=1");
+  background-size: cover;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.5rem;
+  grid-template-rows: repeat(2, 1fr);
+  aspect-ratio: auto 1/1;
+  align-items: center;
+  align-self: center;
+  flex: 1;
+}
+
+.two_pic_new_h1 {
+  color: white;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.two_pic_new_b {
+  grid-column: 1/2;
+  grid-row: 2/2;
+  align-self: start;
+}
+
+.two_pic_new_but {
+  padding: 5px 10px;
+}
+
+.two_pic_new_but:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  border: solid black;
+}
+
+.footer_one {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1rem solid white;
+  border-bottom: 1rem solid white;
+}
+
+.footer_sec {
+  border: 5px solid green;
+}
+
+.footer_sec_nest {
+  border: 1px solid pink;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=home.css.map */

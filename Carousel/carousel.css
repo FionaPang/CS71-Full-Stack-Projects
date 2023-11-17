@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+
+}
+
+.carousel {
+    margin: 100px;
+    position: relative;
+}
+
+.btnBar {
+    border-top: 8px solid #5F5F5F;
+    margin-top: -5px;
+    background-color: #EFEFEF;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnNav {
+    background-color: rgba(81,81,81,0.4);
+    color: rgba(1234,1234,1239,0.8);
+    font-weight: 600;
+    font-size: 25px;
+    transition: all linear 0.3s;
+}
+
+img {
+    width: 100%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #5F5F5F;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+button:active {
+    transform: scale(0.9);
+    transition: all ease-in-out 0.3s;
+}
+
+.btnSelected {
+    background-color: #5F5F5F;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
