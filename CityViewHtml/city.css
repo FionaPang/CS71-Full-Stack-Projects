@@ -1,8 +1,10 @@
 body {
     margin: 0;
-    background-size: cover;
+    background-size: cover!important;
     background-position: center;
-
+    /*the purpose of adding transition here is creating a smooth feeling for user while browser is loading
+    therefore, the user wont feel annoying while browser is taking time to switch background pic*/
+    transition: all ease-in-out 0.5s;
 }
 
 
@@ -27,29 +29,147 @@ body {
     transition: all ease-in-out 0.3s;
 }
 
+/*this is replaced by .gallery{}*/
+/*.carousel {*/
+/*    margin: 0 5px;*/
+/*    width: 90px;*/
+/*    height: 75px;*/
+/*    border-radius: 10px;*/
+/*    background-size: cover!important;*/
+/*    border: 1px solid rgba(200, 200, 200, 0.3);*/
+/*    transition: all ease-in-out 0.3s;*/
+/*    opacity: 0.8;*/
+/*}*/
 
-.carousel div {
+.imgContainer {
+    /*width: 70px;*/
+    /*height: 60px;*/
+}
+
+.selected {
+    /*when you clicked, it highlighted, not hover*/
+    border: 4px solid rgba(255,255,255,0.7) !important;
+}
+
+.searchBar {
+    position: absolute;;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+}
+
+/*this part is replaced by .gallery{}*/
+/*!*when cursor hover the img, we want it to stand out, use transform: scale*!*/
+/*.carousel div:hover  {*/
+
+/*    !*after we make it stand up and larger, z-index can let is overlap *!*/
+/*    z-index: 2;*/
+/*    !*make it standup*!*/
+/*    transform: scale(1.3) translateY(-20px);*/
+/*    transition: all ease-in-out 0.3s;*/
+/*    opacity: 1;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*styling the input box*/
+#inputCity {
+    border: none;
+    /* the background color could be light or dark, so need to set shadow to distinguish box*/
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    /*a little transparent white*/
+    background-color: rgba(255,255,255, 0.6);
+    opacity: 0.6;
+    transition: all ease-in-out 0.3s;
+    color: black;
+    outline: 1px solid grey;
+}
+
+/*when we put cursor on the input box*/
+#inputCity:focus {
+    outline: 1px solid #6e6e6e;
+    box-shadow: inset 0 2px 4px 0 rgba(0 0 0 / 0.05);
+    transition: all ease-in-out 0.3s;
+}
+#inputCity:hover {
+    opacity: 1;
+    outline: 1px solid #6e6e6e;
+    transition: all ease-in-out 0.3s;
+}
+
+#btnSearch {
+    border: none;
+    /* the background color could be light or dark, so need to set shadow to distinguish box*/
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 14px;
+    border-radius: 25px;
+    /*a little transparent white*/
+    background-color: rgba(255,255,255, 0.6);
+    opacity: 0.6;
+    transition: all ease-in-out 0.3s;
+    color: black;
+    outline: 1px solid grey;
+}
+
+#btnSearch:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery div {
     margin: 0 5px;
     width: 90px;
     height: 75px;
     border-radius: 10px;
-    background-size: cover!important; //???
+    background-size: cover!important;
     border: 1px solid rgba(200, 200, 200, 0.3);
     transition: all ease-in-out 0.3s;
     opacity: 0.8;
 }
 
-/*.imgContainer {*/
-/*    !*width: 70px;*!*/
-/*    !*height: 60px;*!*/
-/*}*/
-.carousel div:hover  {
+/*when cursor hover the img, we want it to stand out, use transform: scale*/
+.gallery div:hover  {
 
     /*after we make it stand up and larger, z-index can let is overlap */
     z-index: 2;
-    /*make it standup*/
+    /*make it stand up*/
     transform: scale(1.3) translateY(-20px);
     transition: all ease-in-out 0.3s;
     opacity: 1;
     cursor: pointer;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%) translateY(-10px);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btnNav {
+    background-color: rgba(81,81,84, 0.4);
+    color: rgba(134,134,139,0.9);
+    font-weight: 600;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+}
+
+.btnNav:hover {
+    cursor: pointer;
+    background-color: rgba(210,210,215, 0.7);
 }
